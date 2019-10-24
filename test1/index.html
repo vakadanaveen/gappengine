@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Appengine Registration </title>
+</head>
+<body>
+<form action="sub.php" method="get">
+<table width="30%" align="center">
+echo "<p align='right'>";
+echo "<img src='gae1.jpg' width='200' height='100' alt='appengine'/>";
+echo '</p>';
+<tr> <td colspan="2" align="center"> <h2> Registration Form </h2> </td> </tr>
+<tr> <td> Name </td> <td> <input type='text' name='uname'/></td></tr>
+<tr> <td> Password </td> <td> <input type='password' name='pwd'/></td></tr>
+<tr> <td> Register Number </td> <td> <input type='text' name='rno'/></td></tr>
+<tr> <td> EMail id </td> <td> <input type='email' name='mid'/></td></tr>
+<tr> <td> Mobile </td> <td> <input type='text' name='mobile'/></td></tr>
+<tr> <td> Branch </td> <td>
+<select name='dept'>
+<option value='Computer Science & Engineering'> CSE </option>
+<option value='Electronics & Communication Engineering'> ECE </option>
+
+</select>
+</td></tr>
+<tr> <td> college </td> <td> <input type='text' name='clg'/></td></tr>
+<tr> <td colspan="2" align="center">
+
+<input type="submit" name="sub" value="submit">
+
+<input type="reset" name="rset" value="Reset"></td> </tr>
+</table>
+</form>
+</body>
+</html>

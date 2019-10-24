@@ -1,0 +1,18 @@
+runtime: php55
+
+api_version: 1
+
+handlers:
+- url: /
+  script: index.html
+
+- url: /sub.php
+  script: sub.php
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /(.+\.(gif|png|jpg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg)$
+  application_readable: true
